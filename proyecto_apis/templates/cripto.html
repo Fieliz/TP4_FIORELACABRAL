@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Criptomonedas</title>
+    <link rel="stylesheet" href="../statics/estyle.css">
+</head>
+<body class="theme-cripto">
+    <header>
+        <a href="index.html"><button class="btn-inicio">🏠 INICIO</button></a>
+        <h1>₿ API de Criptomonedas (CoinGecko)</h1>
+    </header>
+
+    <main>
+        <section class="busqueda">
+            <label for="cripto-select">Elige una moneda:</label>
+            <select id="cripto-select">
+                <option value="bitcoin">Bitcoin (BTC)</option>
+                <option value="ethereum">Ethereum (ETH)</option>
+                <option value="solana">Solana (SOL)</option>
+            </select>
+            <button id="buscar-cripto-btn">Obtener Precio</button>
+        </section>
+
+        <div id="resultado-cripto" class="resultado-box">
+            <h2 id="cripto-moneda">...</h2>
+            <p>Precio en USD: <span id="cripto-precio">...</span></p>
+            <p>Cambio 24h: <span id="cripto-cambio-24h">...</span></p>
+            <p>Market Cap: <span id="cripto-market-cap">...</span></p>
+        </div>
+    </main>
+
+    <script src="../js/cripto.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Países</title>
+    <link rel="stylesheet" href="../statics/estyle.css">
+</head>
+<body class="theme-paises">
+    <header>
+        <a href="index.html"><button class="btn-inicio">🏠 INICIO</button></a>
+        <h1>🌎 API de Países (REST Countries)</h1>
+    </header>
+
+    <main>
+        <section class="busqueda">
+            <input type="text" id="pais-input" placeholder="Ingresa el nombre de un país">
+            <button id="buscar-pais-btn">Buscar País</button>
+        </section>
+
+        <div id="resultado-pais" class="resultado-box">
+            <h2 id="pais-nombre">...</h2>
+            <img id="pais-bandera" src="" alt="Bandera" style="max-width: 150px; border: 1px solid #ccc;">
+            <p>Capital: <span id="pais-capital">...</span></p>
+            <p>Población: <span id="pais-poblacion">...</span></p>
+        </div>
+    </main>
+
+    <script src="../js/paises.js"></script>
+</body>
+</html>
